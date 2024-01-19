@@ -44,7 +44,7 @@ const MyChats = ({ fetchAgain }) => {
   const deselectChat = () => {
     setSelectedChat(null);
     setSelectedChatId(null);
-};
+  };
 
   useEffect(() => {
     setLoggedUser(JSON.parse(localStorage.getItem("userInfo")));
@@ -60,7 +60,7 @@ const MyChats = ({ fetchAgain }) => {
     // Cleanup the event listener on component unmount
     return () => {
       document.removeEventListener('keydown', handleKeyPress);
-};
+    };
   }, [fetchAgain]);
 
 
@@ -89,7 +89,7 @@ const MyChats = ({ fetchAgain }) => {
         justifyContent="space-between"
         alignItems="center"
       >
-        My Chats
+        Uchat
         <GroupChatModal>
           <Button
             display="flex"
@@ -119,7 +119,7 @@ const MyChats = ({ fetchAgain }) => {
                   setSelectedChatId(chat._id);
                   setSelectedChat(chat);
                   console.log(chat)
-}}                cursor="pointer"
+                }} cursor="pointer"
                 bg={selectedChat === chat ? "black" : "blue.700"}
                 color={selectedChat === chat ? "white" : "black"}
                 px={5}

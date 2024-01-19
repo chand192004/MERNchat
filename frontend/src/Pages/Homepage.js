@@ -22,7 +22,7 @@ const Homepage = () => {
     if (user) history.push('/chats');
   }, [history]);
 
-  const imageUrl = 'https://i.pinimg.com/originals/9a/c7/7e/9ac77ed57a967f10a8ff8c6dcd6e0308.png'; // Replace with your image URL
+  const imageUrl = 'https://logodix.com/logo/248230.jpg'; // Replace with your image URL
 
   return (
     <Container maxW="xl" centerContent>
@@ -39,8 +39,8 @@ const Homepage = () => {
       >
         <Box display="flex" alignItems="center">
           <Image src={imageUrl} alt="Logo" boxSize="60px" borderRadius="full" />
-          <Text ml={1} fontSize="4xl" color="white" fontFamily= "Great Vibes">
-            My Chat
+          <Text ml={1} fontSize="4xl" color="white" fontFamily="Great Vibes">
+            Uchat
           </Text>
         </Box>
       </Box>
